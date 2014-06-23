@@ -142,4 +142,4 @@ function roundTo(Num, Places) {
       else return Num;
    }
    else return Math.round(Num);
-}
+}module.exports = require('./lib/RounderDB.js');

@@ -54,7 +54,6 @@ app.post('/check', function(req, res) {
 		// Scrape Github for names of repos using keywords.
 		// Since there is a limit on the number of keywords you can search with
 		// split up the keywords into groups of 5 (max) and search.
-		console.log('REACHED HERE', keywords);
 		var remaining = true;
 		iter = 0;
 		while (remaining){

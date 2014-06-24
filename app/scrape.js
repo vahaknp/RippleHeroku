@@ -28,10 +28,9 @@ findURLs = function(keywords, iter) {
 					urls[i] = $(this).find('.title').children().first().next().attr('href');
 				});
 			});
-			// Find Number
+			// Find Number of results which denotes rarity of keywords searched
 			$('.counter').filter(function(){
 				number = $(this).text();
-				console.log('NUMBER:', number);
 			});
 		}
 

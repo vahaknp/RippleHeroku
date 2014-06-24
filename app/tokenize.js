@@ -34,7 +34,6 @@ getObjects = function(obj, key, val) {
 
 // Finds all function names in file
 findFunctions = function(path) {
-	console.log("PATH:", path);
 	var unique_functions = [];
 	data = fs.readFileSync(path, 'utf8');
 	tree = esprima.parse(data);
@@ -61,7 +60,6 @@ findFunctions = function(path) {
 		entry = expressions[index];
 		unique_functions.push(entry.id.name);
 	}
-	//console.log(unique_functions);
 	return(unique_functions);
 };
 

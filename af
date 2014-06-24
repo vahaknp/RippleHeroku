@@ -1,0 +1,336 @@
+[33mcommit f521cb9c655ee01fcc804aec1c5c3c5726b9c70b[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Tue Jun 24 11:16:38 2014 -0700
+
+    General Cleanup
+    general cleanup
+    
+    more cleanup
+    
+    more cleanup
+    
+    more cleanup
+
+[33mcommit 11eb53fc8d881dbc556d5a7df5fe25855587e27f[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Tue Jun 24 01:03:50 2014 -0700
+
+    Final commit
+    
+    final
+    
+    final
+
+[33mcommit 7a32ff00276ba8d4e7ea2ea50df5fa6da1f9948e[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Tue Jun 24 00:40:10 2014 -0700
+
+    Truncating basecode
+    no truncate
+    
+    truncate at end
+    
+    by send
+    
+    by send2
+    
+    no delete
+    
+    no delete2
+    
+    no delete3
+    
+    almost final
+    
+    tr
+
+[33mcommit 99372910d4001511eba6839eed82bcb25649b16f[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Tue Jun 24 00:12:25 2014 -0700
+
+    Removing candidates before each instancei
+    remove candidates
+    
+    remove candidates and make new
+    
+    remove candidates and make new
+    
+    exec
+    
+    exec
+    
+    exec2
+    
+    exec var
+    
+    trunc
+    
+    orig
+    
+    orig
+    
+    back to normal
+
+[33mcommit 7af1d8586436434827571e103ab93c4e4c475fe4[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 23:53:11 2014 -0700
+
+    Chmoding for file manipulation
+    chmod
+    
+    chmod
+    
+    nevermind
+    
+    file delete
+    
+    truncate
+    
+    truncate
+    
+    truncate
+
+[33mcommit db6ddfcfb4fab8ce5283e172c86c20979d3db452[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 22:58:44 2014 -0700
+
+    Printing statistics for debugging
+    exists
+    
+    stats
+    
+    stats
+    
+    stats
+    
+    stats
+    
+    stats
+    
+    delete create
+    
+    delete create
+    
+    delete create
+    
+    delete create2
+    
+    delete create2
+    
+    no options
+    
+    no delete
+    
+    port+
+    
+    progress
+    
+    progress
+
+[33mcommit 1bfadc3f1c093d7779b45b30cdfd8d2282f314c1[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 22:26:34 2014 -0700
+
+    Fixing basecode
+    fixed basecode
+    
+    not set
+    
+    not set
+    
+    online test
+    
+    no cheating
+    
+    ports again
+    
+    debug
+    
+    debug
+    
+    debug
+    
+    debug
+    
+    debug
+    
+    debug
+    
+    debug
+
+[33mcommit 86faaf7c6c53eaf032ab07dce14926c055fc5577[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 22:17:20 2014 -0700
+
+    Back to Perl
+    back2perl
+    
+    back2perl
+    
+    back2perl2
+    
+    back2perl2
+
+[33mcommit 3c77ae2dfd9876468b9c1f69d6b8b80b275010e1[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 21:36:57 2014 -0700
+
+    Some styling
+    style
+    
+    style
+    
+    style
+    
+    style
+    
+    style
+    
+    where is php
+    
+    where is php?
+    
+    whereisphp
+    
+    whereisphpfound
+    
+    composer
+
+[33mcommit 85f115fd201cdc83f649c13c89608d6d4edde115[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 20:21:46 2014 -0700
+
+    Trying Moss PHP
+    moss
+    
+    moss2
+    
+    moss3
+    
+    moss4
+    
+    moss5
+    
+    moss test
+    
+    moss test2
+    
+    moss test3
+    
+    moss php
+    
+    moss php2
+    
+    moss php3
+    
+    moss php4
+
+[33mcommit baf98abd0438b18192cdd90cca52f4e8895565e7[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 19:27:20 2014 -0700
+
+    Pushing onto Heroku
+    trying on heroku
+    
+    trying on heroku
+    
+    trying on heroku timeout
+    
+    trying on heroku timeout2
+    
+    name changes
+    
+    new names
+    
+    with deletes
+    
+    new folder each time
+    
+    new folder each time
+    
+    back to normal
+
+[33mcommit 479dfb002afe74eaaaae581d1f0a5fa2555775f5[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 18:41:54 2014 -0700
+
+    Display main page
+    
+    download for comparison2
+    
+    res send
+
+[33mcommit d780eaf9ae445230e8d85c6afa3b7c97941e701b[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 17:54:15 2014 -0700
+
+    General debugging
+    t
+
+[33mcommit c7db47b7b640ccc97445e66ba8f49bbf39ad00fc[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 17:21:37 2014 -0700
+
+    Fixing ports
+    form
+    
+    form2
+    
+    form2
+    
+    form2
+    
+    port
+    
+    print port
+    
+    print port
+    
+    print port
+    
+    print port
+
+[33mcommit 803035ad6630b6314ced3f0c5fabd802511f2d5a[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 17:15:14 2014 -0700
+
+    Trying out Heroku
+
+[33mcommit eb231b4169b3c2b1ed7e0849f734d819c1174623[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 17:06:43 2014 -0700
+
+    Adding other libs
+
+[33mcommit c2e4dc58d015b3d3e0b65649fc82a3c1915c3ab9[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 17:04:05 2014 -0700
+
+    Adding github api
+
+[33mcommit 7938cf141c1e8c1e360f49ab12135fcf75aa7cac[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 16:35:52 2014 -0700
+
+    Fixing a port problem
+
+[33mcommit 71d5912c9051b81c208480a29264c51887c81b0c[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 16:08:46 2014 -0700
+
+    Node.js
+    package.json
+    
+    modules
+    
+    express
+    
+    express
+    
+    express
+
+[33mcommit fe14357c4072dbd8da7c96797adbd88d9d259f0d[m
+Author: Vahakn Papazian <vpapazian@college.harvard.edu>
+Date:   Mon Jun 23 16:06:10 2014 -0700
+
+    init

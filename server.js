@@ -25,8 +25,9 @@ app.get('/', function(req, res) {
 //Run similarity checker on given RAW github file
 app.post('/check', function(req, res) {
 	
-	/*//Download the given RAW Github file
+/*	//Download the given RAW Github file
 	var src = req.body.url;
+	console.log(src);
     var output = 'basecode/basecode.js';
     var options = {
         port: 8080
@@ -66,10 +67,15 @@ app.post('/check', function(req, res) {
 
     });*/
 	
-	//Send resulting files to MOSS to be analyzied and write the result to an html page
+	/*//Send resulting files to MOSS to be analyzied and write the result to an html page
 	var exec = require('child_process').exec;
-	exec("php mossnet.php", function(err, stdout, stderr) {
+	exec("php mossnet.ph", function(err, stdout, stderr) {
 	    res.send("-------"+"err:"+err+"-------out:"+stdout+"-------stderr:"+stderr)
+	});*/
+
+	var exec = require('child_process').exec;
+	exec("/usr/bin/perl mossnet.pl -l javascript basecode/*.js candidates/*.js", function(err, stdout, stderr) {
+	    res.send(stdout);
 	});
 
 });

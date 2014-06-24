@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
 app.post('/check', function(req, res) {
 	
 
-	var src = req.body.url;
+/*	var src = req.body.url;
     var output = 'basecode/basecode.js';
     var options = {
         port: 8080
@@ -53,7 +53,15 @@ app.post('/check', function(req, res) {
 			}
 			iter += 1;
 		};
-    });
+
+
+    });*/
+
+	var exec = require('child_process').exec;
+	exec("/usr/bin/php mossnet.php", function(err, stdout, stderr) {
+	    res.send("-------"+"err:"+err+"-------out:"+stdout+"-------stderr:"+stderr)
+	});
+
 
 });
 

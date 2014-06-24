@@ -52,7 +52,6 @@ app.post('/check', function(req, res) {
 			}
 			iter += 1;
 		};
-		console.log("DONE!");
     });
 });
 

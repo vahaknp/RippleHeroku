@@ -41,7 +41,7 @@ findURLs = function(keywords, iter) {
             var temp = urls[index].replace('/blob', '');
             temp = 'https://raw.githubusercontent.com' + temp
             var src = temp;
-            var output = 'tmp/code'+iter+index+'.js';
+            var output = 'candidates/code'+iter+index+'.js';
             var options = {
                 port: 8081
             };

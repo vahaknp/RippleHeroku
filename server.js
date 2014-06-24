@@ -1,5 +1,5 @@
 var express = require('express');
-var fs = require('fs');
+var fs = require('fs-extra');
 var app     = express();
 var bodyParser = require('body-parser');
 var wget = require('wget');
@@ -19,9 +19,10 @@ app.get('/', function(req, res) {
 });
 
 app.post('/check', function(req, res) {
+	
 
 	var src = req.body.url;
-    var output = 'samplecode/samplecode.js';
+    var output = 'basecode/basecode.js';
     var options = {
         port: 8080
     };
@@ -32,7 +33,7 @@ app.post('/check', function(req, res) {
     download.on('end', function(output) {
         console.log(output);
         //Define path of file
-		path = 'samplecode/samplecode.js';
+		path = 'basecode/basecode.js';
 		//Find function names
 		keywords = tokenize.findFunctions(path);
 
@@ -53,5 +54,6 @@ app.post('/check', function(req, res) {
 			iter += 1;
 		};
     });
+
 });
 

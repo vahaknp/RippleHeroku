@@ -15,8 +15,9 @@
 		<h1><span class="fa"></span> Check Similarities</h1>
 
 		<h1>URL of file to check</h1>
-        <form action="http://stormy-taiga-8174.herokuapp.com:8080/check" method="get"> 
-            <input type="text" id="url"></input>
+        <form action="http://stormy-taiga-8174.herokuapp.com/check" method="post" target="_blank">
+        <!-- <form action="http://127.0.0.1:8080/check" method="post" target="_blank"> -->
+            <input type="text" id="url" name="url"></input>
             <input type="submit" value="check">
         </form>
 

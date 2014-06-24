@@ -75,8 +75,8 @@ app.post('/check', function(req, res) {
 
 		var exec = require('child_process').exec;
 		exec("/usr/bin/perl mossnet.pl -l javascript basecode/*.js candidates/*.js", function(err, stdout, stderr) {
-	    res.send(stdout);
-	});
+	    	res.send(stdout);
+		});
 
     });
 	

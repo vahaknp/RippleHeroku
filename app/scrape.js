@@ -44,7 +44,6 @@ findURLs = function(keywords, iter) {
             var src = temp;
             var output = 'candidates/code'+iter+index+'.js';
             var options = {
-                port: process.env.PORT
             };
             var download = wget.download(src, output, options);
             download.on('error', function(err) {

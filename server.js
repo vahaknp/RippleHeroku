@@ -24,23 +24,30 @@ app.get('/', function(req, res) {
 
 //Run similarity checker on given RAW github file
 app.post('/check', function(req, res) {
-	
+
+
 	//Download the given RAW Github file
 	var src = req.body.url;
 	console.log(src);
     var output = 'basecode/basecode.js';
     var options = {
-        port: process.env.PORT
     };
     var download = wget.download(src, output, options);
     download.on('error', function(err) {
         console.log(err);
     });
+
+    //Download Progress
+    download.on('progress', function(output) {
+    	console.log('progress', output);
+    });
+
     //When download ends, send it to be tokenized
     download.on('end', function(output) {
-        console.log('output', output);
+
         //Define path of file
 		path = 'basecode/basecode.js';
+
 		//Find function names
 		//Get tokens that are going to be used for the search
 		keywords = tokenize.findFunctions(path);

@@ -52,7 +52,7 @@ findURLs = function(keywords, iter) {
             download.on('end', function(output) {
                 console.log(output);
             });
-        }
+        };
     });
 };
 

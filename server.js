@@ -24,8 +24,6 @@ app.get('/', function(req, res) {
 
 //Run similarity checker on given RAW github file
 app.post('/check', function(req, res) {
-	
- 	fs.truncateSync('basecode/basecode.js', 0);
 
 	//Download the given RAW Github file
 	var src = req.body.url;
@@ -76,8 +74,7 @@ app.post('/check', function(req, res) {
 		var exec = require('child_process').exec;
 		exec("/usr/bin/perl mossnet.pl -l javascript basecode/*.js candidates/*.js", function(err, stdout, stderr) {
 	    	res.send(stdout);
-		});
-
+	    	fs.truncateSync('basecode/basecode.js');
     });
 	
 

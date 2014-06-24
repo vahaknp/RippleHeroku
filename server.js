@@ -5,6 +5,7 @@ var app     = express();
 var tokenize = require('./app/tokenize');
 var scrape = require('./app/scrape');
 var moss = require('./app/moss');
+var github = require('./app/github')
 
 app.listen(process.env.PORT || 5000)
 console.log('Magic happens on port 8081');

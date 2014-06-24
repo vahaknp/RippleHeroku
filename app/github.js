@@ -1,4 +1,4 @@
-var github = require('github-api');
+var Github = require('github-api');
 
 console.log("GIT GO");
 

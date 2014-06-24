@@ -18,7 +18,6 @@ findURLs = function(keywords, iter) {
         }
     }
     url = url + '&ref=advsearch&type=Code&l=JavaScript';
-
     //Scrape URL
     request(url, function(error, response, html){
         
@@ -45,7 +44,7 @@ findURLs = function(keywords, iter) {
             var src = temp;
             var output = 'candidates/code'+iter+index+'.js';
             var options = {
-                port: 8081
+                port: process.env.PORT
             };
             var download = wget.download(src, output, options);
             download.on('error', function(err) {

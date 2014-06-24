@@ -25,12 +25,12 @@ app.get('/', function(req, res) {
 //Run similarity checker on given RAW github file
 app.post('/check', function(req, res) {
 	
-/*	//Download the given RAW Github file
+	//Download the given RAW Github file
 	var src = req.body.url;
 	console.log(src);
     var output = 'basecode/basecode.js';
     var options = {
-        port: 8080
+        port: process.env.PORT
     };
     var download = wget.download(src, output, options);
     download.on('error', function(err) {
@@ -38,7 +38,7 @@ app.post('/check', function(req, res) {
     });
     //When download ends, send it to be tokenized
     download.on('end', function(output) {
-        console.log(output);
+        console.log('output', output);
         //Define path of file
 		path = 'basecode/basecode.js';
 		//Find function names
@@ -48,6 +48,7 @@ app.post('/check', function(req, res) {
 		//Scrape Github for names of repos using keywords.
 		//Since there is a limit on the number of keywords you can search with
 		//split up the keywords into groups of 5 (max) and search.
+		console.log('REACHED HERE', keywords);
 		var remaining = true;
 		iter = 0;
 		while (remaining){
@@ -64,19 +65,13 @@ app.post('/check', function(req, res) {
 			iter += 1;
 		};
 
-
-    });*/
-	
-	/*//Send resulting files to MOSS to be analyzied and write the result to an html page
-	var exec = require('child_process').exec;
-	exec("php mossnet.ph", function(err, stdout, stderr) {
-	    res.send("-------"+"err:"+err+"-------out:"+stdout+"-------stderr:"+stderr)
-	});*/
-
-	var exec = require('child_process').exec;
-	exec("/usr/bin/perl mossnet.pl -l javascript basecode/*.js candidates/*.js", function(err, stdout, stderr) {
+		var exec = require('child_process').exec;
+		exec("/usr/bin/perl mossnet.pl -l javascript basecode/*.js candidates/*.js", function(err, stdout, stderr) {
 	    res.send(stdout);
 	});
+
+    });
+	
 
 });
 

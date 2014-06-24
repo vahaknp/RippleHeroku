@@ -6,16 +6,18 @@ var tokenize = require('./app/tokenize');
 var scrape = require('./app/scrape');
 var moss = require('./app/moss');
 
-app.listen(process.env.PORT || 5000)
-console.log('Magic happens on port 8081');
-exports = module.exports = app;
+app.use(express.bodyParser());
 
+app.listen(process.env.PORT || 8080)
+console.log('Magic happens on port 8080');
+exports = module.exports = app;
 
 app.get('/', function(req, res) {
 	res.render('index.ejs'); // load the index.ejs file
 });
 
 app.get('/check', function(req, res) {
+	console.log(req);
 	//Define path of file
 	path = 'samplecode/samplecode.js';
 	//Find function names

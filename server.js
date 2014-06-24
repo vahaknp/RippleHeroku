@@ -24,7 +24,8 @@ app.get('/', function(req, res) {
 
 //Run similarity checker on given RAW github file
 app.post('/check', function(req, res) {
-
+	
+ 	fs.truncateSync('basecode/basecode.js', 0);
 
 	//Download the given RAW Github file
 	var src = req.body.url;

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Check Similarities</title>
+	<title>Code Originiality Checker</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
 	<style>
@@ -12,13 +12,15 @@
 <div class="container">
 
 	<div class="jumbotron text-center">
-		<h1><span class="fa"></span> Check Similarities</h1>
+		<h1><span class="fa"></span>Code Originiality Checker</h1>
 
-		<h1>URL of file to check</h1>
+		<h3>Insert a URL of a raw Github file here that you would like to check for originality.</h3>
+		<h4>For example: <a href="https://raw.githubusercontent.com/vahaknp/Dzoor/master/app.js">https://raw.githubusercontent.com/vahaknp/Dzoor/master/app.js</a></h4>
+		</br>
         <form action="http://stormy-taiga-8174.herokuapp.com/check" method="post" target="_blank">
         <!-- <form action="http://127.0.0.1:8080/check" method="post" target="_blank"> -->
-            <input type="text" id="url" name="url"></input>
-            <input type="submit" value="check">
+            <input type="text" id="url" name="url" style="width:800px"></input>
+            <input type="submit" value="Check">
         </form>
 
 	</div>

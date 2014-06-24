@@ -1,10 +1,12 @@
+//Libs
 var request = require('request');
 var cheerio = require('cheerio');
 var wget = require('wget');
 var fs = require('fs');
 
-GLOBAL.urls = [];
+urls = [];
 
+//Find the URLs based on given keywords by scraping Github search
 findURLs = function(keywords, iter) {
     //Create URL based on keywords 
     url = 'https://github.com/search?q=';
@@ -35,7 +37,7 @@ findURLs = function(keywords, iter) {
             })
         }
 
-        //Download
+        //Download the files based on the scraping
         for (var index in urls){
             console.log(urls[index]);
             var temp = urls[index].replace('/blob', '');
